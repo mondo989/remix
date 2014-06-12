@@ -14,13 +14,14 @@ $('.circle').on("click", function(){
     $(".demo-row-2").show("slow");
 });
 
+
+
 $('#begin-contact').on("click", function (){
-    
     $("#contact").show("slow");
     $('#begin-contact').hide();
-
 });
 
+// This allows for the nav to be clicked and enabling the div that's hidden.
 $('#nav-contact').on("click", function (){
      $("#contact").show("slow");
      $('#begin-contact').hide();
@@ -44,3 +45,20 @@ $('body').scrollspy({
 });
 
 
+//Scrolll button on bottom makes animation appear
+$("#transform").on("click", function (){
+    $('#lion').hide("slow");
+});
+
+// The see more button clicked makes contact appear
+$(".see-more-span").on("click", function () {
+    $(".contact-button-span").show("slow");
+    $('.see-more-span').hide ("fast") ;
+});
+
+$(".contact-button-span").on("click", function () {
+     $("#contact").show("slow");
+     $('#begin-contact').hide();
+      $(".contact-button-span").hide();
+      $(".circle").hide();
+});

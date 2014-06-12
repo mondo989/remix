@@ -73,12 +73,15 @@
         <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <img class="img-responsive" src="img/me.png" alt="">
+                         <!--   <span class="main-circle">   MHead is the  hover The main circle hover -->
+                            <img id="mhead" class="img-responsive" src="img/me.png" alt="">
+                            <img id="lion" class="lion-animate img-responsive" src="img/mlion.png" alt="">
+                           <!--  </span> -->
                             <div class="intro-text">
-                                <span class="name">Welcome</span>
+                                <span class="name">Hi! I'm Armando.</span>
                                  <i class="fa fa-fire fa-3x"></i>
-                                <hr>
-                                <span class="skills">UI Designer & Front-End Developer</span>
+                                <hr class= "custom-hr">
+                                <span class="skills">U/I Designer & Front-End Developer</span>
                             </div>
                         </div>
                     </div>
@@ -99,6 +102,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Projects</h2>
+
                     <hr class="star-primary">
                 </div>
             </div>
@@ -172,9 +176,15 @@
  
 <div class="show-more">
         <div class="circle">      
-                   <span>See more
+                   <span class="see-more-span">See more  
                        <i class="fa fa-plus-circle"></i> 
                     </span>
+                  <span class="contact-button-span"> <a href="#contact">  Contact Me <i class="fa fa-plus-circle">
+                       </i>
+                 </a>
+ 
+                    </span>
+
         </div>
 </div>
 
@@ -182,31 +192,31 @@
 
 <!-- About Section -->
 
-    <section class="success" id="about">
+  <section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>About Me</h2>
+                    <hr class="mail-primary ">
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hi I am Armando.</p>
+                    <p>I graduated from Michigan Technological University in May.</p>
                 </div>
                 <div class="col-lg-4">
                     <p>I'm a junior front end developer.
                     Check out my <a href="mondo989.github.com">blog</a></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    
+                       <a id="begin-contact"  class="btn btn-lg btn-outline move-bottom">
+                             <i class="fa fa-download"></i> Contact Me
+                       </a>
                 </div>
             </div>
-                  <a id="begin-contact"  class="btn btn-lg btn-outline move-bottom">
-                        <i class="fa fa-download"></i> Contact Me
-                    </a>
         </div>
-    </section>
+  </section>
 
 <!-- Contact PART -->
 
@@ -251,8 +261,16 @@
         </div>
     </section>
 
+ 
     <footer class="text-center">
+
+
+      
         <div class="footer-above">
+  <div class="footer-move-right "></div>
+        <div class="footer-move-left "></div>
+         
+
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
@@ -264,20 +282,20 @@
                     <div class="footer-col col-md-4">
                         <h3>On the Web</h3>
                         <ul class="list-inline">
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/Armandodotsx" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <li><a href="https://twitter.com/Armando_Sx" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <li><a href="http://www.linkedin.com/in/armandoflores3" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <li><a href="https://dribbble.com/Mondo989" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About Freelance</h3>
-                        <p>Periodically, I update my blog, you can read about it here <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <p>Periodically, <a href="http://mondo989.github.io/">I update my blog,</a>you can read about it <a href="http://mondo989.github.io/">here</a>.</p>
                     </div>
                 </div>
             </div>
@@ -286,18 +304,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2014 - Armando.sx
+                        Copyright &copy; 2014 - Bootstrapped by Armando.sx
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="scroll-top page-scroll ">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+   
 
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -486,6 +500,13 @@
             </div>
         </div>
     </div>
+
+ <div id="transform" class="scroll-top page-scroll ">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+</div>
+
 
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
