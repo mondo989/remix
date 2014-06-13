@@ -11,19 +11,20 @@ $(function() {
 
 
 $('.circle').on("click", function(){
-    $(".demo-row-2").show("slow");
+    $(".demo-row-2").show();
 });
 
 
 
 $('#begin-contact').on("click", function (){
-    $("#contact").show("slow");
     $('#begin-contact').hide();
+    $("#contact").show();
+    
 });
 
 // This allows for the nav to be clicked and enabling the div that's hidden.
 $('#nav-contact').on("click", function (){
-     $("#contact").show("slow");
+     $("#contact").show();
      $('#begin-contact').hide();
 });
 

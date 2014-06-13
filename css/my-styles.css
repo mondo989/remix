@@ -175,7 +175,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     header .intro-text .skills {
@@ -196,6 +196,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        font-weight:300;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -211,13 +212,17 @@ header .intro-text .skills {
         -moz-transition: all .3s;
         transition: all .3s;
     }
+
+   
 }
 
 .navbar {
     text-transform: uppercase;
     font-family:  'Lato', sans-serif;
-    font-style: bold;
+
 }
+
+
 
 .navbar a:focus {
     outline: 0;
@@ -305,6 +310,13 @@ opacity: .7;
 }
 
 
+.fa-plus-circle:before{
+    z-index: 9000;
+background: white;
+padding: 5px;
+}
+
+
 /* This is the aboutsection */
 
 section.success {
@@ -324,6 +336,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 }
+
+
+
 
 @media(max-width:767px) {
     section {
@@ -359,7 +374,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    opacity: .81;
+    background: gray;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -495,13 +511,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .circle>span>i {
     background-color: white;
     border-radius:120px;
-    padding: 20px;
+    padding: 30px;
     transition: .31s;
 }
 
 .circle>span>i:hover {
     opacity: 0;
     transition: .31s;
+
     
 }
 
@@ -603,31 +620,33 @@ footer h3 {
 footer .footer-above {
 
 padding-top: 50px;
-background: black;
+background: transparent;
 border-top: 3px  double gray;
-z-index: -222;
+
    -moz-box-shadow: 1px 3px 15px 6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 1px 3px 15px 6px rgba(0,0,0,0.75);
               box-shadow: 1px 3px 15px 6px rgba(0,0,0,0.75);
         background-image:
-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+-moz-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+-moz-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+-moz-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+-moz-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);    
+background-image:
+-webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+-webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+-webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+-webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
 background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .footer-move-left {
-position: absolute;
+
 margin: 0 auto;
-height: 400px;
+height: 390px;
 width: 100%;
-bottom: 0;
-left: 0;
-right: 0;
-border-top: 13px  blue;
-padding-top: 50px;
+float: left;
+background-color: transparent;
 background-image:
 radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
 radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
@@ -635,18 +654,23 @@ radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
 radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
 background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-opacity: .1;
-
- -webkit-animation: fadeInRight 22s infinite easeOut;
-       -moz-animation: fadeInRight 22s infinite easeOut;
-        -ms-animation: fadeInRight 22s infinite easeOut;
-         -o-animation: fadeInRight 22s infinite easeOut;
-            animation: fadeInRight 22s infinite easeOut;
+opacity: .71;
+z-index: 9;
+ -webkit-animation: fadeInLeft 9s infinite linear;
+       -moz-animation: fadeInLeft 9s infinite linear;
+        -ms-animation: fadeInLeft 9s infinite linear;
+         -o-animation: fadeInLeft 9s infinite linear;
+            animation: fadeInLeft 9s infinite linear;
 
 }
 
 .footer-move-right {
-background-color:black;
+height: 400px;
+opacity: .51;
+margin: 0 auto;
+width: 150%;
+margin-top: 1px;
+background-color:transparent;
 background-image:
 radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
 radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
@@ -654,14 +678,31 @@ radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
 radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
 background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    -webkit-animation: fadeInRight 2s infinite;
-       -moz-animation: fadeInRight 2s infinite;
-        -ms-animation: fadeInRight 2s infinite;
-         -o-animation: fadeInRight 2s infinite;
-            animation: fadeInRight 2s infinite;
-        z-index: 2222952;
+    -webkit-animation: fadeInRight 8s infinite linear;
+       -moz-animation: fadeInRight 8s infinite linear;
+        -ms-animation: fadeInRight 8s infinite linear;
+         -o-animation: fadeInRight 8s infinite linear;
+            animation: fadeInRight 8s infinite linear;
+
 
 }
+
+
+
+
+
+.moving-background-holder {
+    position: absolute;
+    width: 100%;
+    height: 275px;
+   opacity: 1;
+   margin-top: -255px;
+   background: black;
+   z-index: -30;
+   overflow-y: hidden;
+}
+
+
 
 footer .footer-col {
     margin-bottom: 50px;
@@ -702,11 +743,10 @@ footer .footer-below {
 
 .scroll-top {
     z-index: 1049;
-    position: fixed;
-    right: 0;
-    bottom: 0;
     width: 50px;
     height: 50px;
+    float: right;
+    margin-top: -30px;
 }
 
 .scroll-top .btn {
@@ -778,4 +818,17 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+@media(max-width:990px){
+  .moving-background-holder {
+        height: 590px;
+        width: 100%;
+         position: absolute;
+         opacity: 1;
+       background: black;
+        z-index: -30;
+       overflow-y: hidden;
+       margin-top: -575px;
+    }
 }
