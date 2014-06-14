@@ -313,7 +313,7 @@ opacity: .7;
 .fa-plus-circle:before{
     z-index: 9000;
 background: white;
-padding: 5px;
+
 }
 
 
@@ -418,16 +418,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .fa-plus-circle {
     font-size: 5em;   
-    position: relative;
+    position: absolute;
+    margin-top: -55px;
     left:0;
     right:0;
-    margin-top: -200px;
+    top: 0;
+    transition: 1s;
 }
 
 .fa-plus-circle:hover{
     opacity: 0;
     transition: .31s;   
 }
+
+.fa-envelope {
+    font-size: 1.3em;
+    margin: 0 5px;
+}
+
 
 #contact {
     display: none;
@@ -441,11 +449,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     right: 0;
     bottom: -40px;
     left: 0;
-    z-index: 0;
+
 }
 
 #contact-button-inside {
     display: none;
+}
+
+.white-background {
+    background: white;
+
 }
 
 
