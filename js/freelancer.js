@@ -48,8 +48,19 @@ $('body').scrollspy({
 
 //Scrolll button on bottom makes animation appear
 $("#transform").on("click", function (){
-    $('#lion').hide("slow");
+
+    $('#mhead').hide();
+    $('#lion').show("slow");
+    $('header').css({ background: '#000'});
 });
+
+$("#af-logo").on("click", function (){
+
+    $('#mhead').hide();
+    $('#lion').show();
+    $('header').css({ background: '#000'});
+});
+
 
 // The see more button clicked makes contact appear
 $(".see-more-span").on("click", function () {
