@@ -145,11 +145,11 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b2b2b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     z-index: -2;
     box-shadow: 1px .51px 5px 2px rgba(0, 0, 0, 0.176);
-    -webkit-transition: 4s;
-       -moz-transition: 4s;
-        -ms-transition: 4s;
-         -o-transition: 4s;
-            transition: 4s;
+    -webkit-transition: 2s;
+       -moz-transition: 2s;
+        -ms-transition: 2s;
+         -o-transition: 2s;
+            transition: 2s;
 
 }
 

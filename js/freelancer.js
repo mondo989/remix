@@ -58,7 +58,8 @@ $("#af-logo").on("click", function (){
 
     $('#mhead').hide();
     $('#lion').show();
-    $('header').css({ background: '#000'});
+    $('header').css({ background: '#000' });
+
 });
 
 
