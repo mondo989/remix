@@ -10,5 +10,6 @@ Lea Verou
 for the CSS Background
 Freelancer Theme - Bootstrap
 http://daneden.me/animate - the animation boss
+
 TeamTreehouse for teaching me.
 
