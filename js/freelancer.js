@@ -1,3 +1,10 @@
+
+// Navbar Closes and NOT opens whenever you click off screen, Thx StOvFlow
+$(document).on('click',function(){
+$('.navbar-collapse.in').collapse('hide');
+});
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
@@ -75,3 +82,5 @@ $(".contact-button-span").on("click", function () {
       $(".contact-button-span").hide();
       $(".circle").hide();
 });
+
+
