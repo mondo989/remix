@@ -316,11 +316,11 @@ section {
 z-index: -1;
 
 
-    -webkit-animation: fadeInDown 2s  ease;
-       -moz-animation: fadeInDown 2s  ease;
-        -ms-animation: fadeInDown 2s  ease;
-         -o-animation: fadeInDown 2s  ease;
-            animation: fadeInDown 2s  ease;
+    -webkit-animation: vanishIn 2s  ease;
+       -moz-animation: vanishIn 2s  ease;
+        -ms-animation: vanishIn 2s  ease;
+         -o-animation: vanishIn 2s  ease;
+            animation: vanishIn 2s  ease;
 
 -webkit-transition: 2s;
    -moz-transition: 2s;
@@ -333,11 +333,38 @@ z-index: -1;
     z-index: 2;
     opacity: 1;
     
+  -webkit-animation: vanishIn 2s  ease;
+       -moz-animation: vanishIn 2s  ease;
+        -ms-animation: vanishIn 2s  ease;
+         -o-animation: vanishIn 2s  ease;
+            animation: vanishIn 2s  ease;
+
+-webkit-transition: 2s;
+   -moz-transition: 2s;
+    -ms-transition: 2s;
+     -o-transition: 2s;
+        transition: 2s;
+
+
+}
+
+#mhead:hover {
+    -webkit-animation: vanishIn 2s  ease;
+       -moz-animation: vanishIn 2s  ease;
+        -ms-animation: vanishIn 2s  ease;
+         -o-animation: vanishIn 2s  ease;
+            animation: vanishIn 2s  ease;
+
+-webkit-transition: 2s;
+   -moz-transition: 2s;
+    -ms-transition: 2s;
+     -o-transition: 2s;
+        transition: 2s;
 }
 
 
 .fa-plus-circle:before{
-    z-index: 9000;
+    z-index: 900;
 background: white;
 
 }
@@ -390,6 +417,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -429,7 +457,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 #portfolio * {
-    z-index: 2;
+    z-index: 20;
 }
 
 @media(min-width:767px) {
@@ -440,18 +468,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .demo-row-2 {
     display:none;
-    -webkit-animation: fadeInDown 1s  linear;
-       -moz-animation: fadeInDown 1s  linear;
-        -ms-animation: fadeInDown 1s  linear;
-         -o-animation: fadeInDown 1s  linear;
-            animation: fadeInDown 1s  linear;
+    -webkit-animation: vanishIn 1s  linear;
+       -moz-animation: vanishIn 1s  linear;
+        -ms-animation: vanishIn 1s  linear;
+         -o-animation: vanishIn 1s  linear;
+            animation: vanishIn 1s  linear;
 
 
-    -webkit-transition: 2s;
-       -moz-transition: 2s;
-        -ms-transition: 2s;
-         -o-transition: 2s;
-            transition: 2s;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
 }
 
 .show-more{ 
@@ -514,7 +542,6 @@ background: white;
 
 .white-background {
     background: white;
-
 }
 
 
@@ -531,6 +558,20 @@ background: white;
     }
 
      */
+
+   .tinUp {
+       -webkit-animation: tinUpOut .7s  ease;
+       -moz-animation: tinUpOut .7s  ease;
+        -ms-animation: tinUpOut .7s  ease;
+         -o-animation: tinUpOut .7s  ease;
+            animation: tinUpOut .7s  ease;
+
+-webkit-transition: .7s;
+   -moz-transition: .7s;
+    -ms-transition: .7s;
+     -o-transition: .7s;
+        transition: .7s;
+   } 
 
 .circle {
   background: transparent;
@@ -599,6 +640,7 @@ background: white;
 .contact-button-span>a:hover {
     opacity: 1;
 }
+
 
   
 .btn-outline {
@@ -726,11 +768,11 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 opacity: .71;
 z-index: 9;
 
- -webkit-animation: fadeInLeft 20s infinite linear;
-       -moz-animation: fadeInLeft 20s infinite linear;
-        -ms-animation: fadeInLeft 20s infinite linear;
-         -o-animation: fadeInLeft 20s infinite linear;
-            animation: fadeInLeft 20s infinite linear;
+ -webkit-animation: fadeInLeft 10s infinite linear;
+       -moz-animation: fadeInLeft 10s infinite linear;
+        -ms-animation: fadeInLeft 10s infinite linear;
+         -o-animation: fadeInLeft 10s infinite linear;
+            animation: fadeInLeft 10s infinite linear;
 
 }
 
@@ -791,7 +833,11 @@ footer .footer-below {
     left: 0;
 
     padding: 2% 10%;
-    transition: .5s;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
 }
 
 .btn-social {
@@ -833,13 +879,15 @@ footer .footer-below {
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
-    min-height: 100%;
+    min-height: 90%;
     border: 0;
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background: white;
+    z-index: 2000;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -870,7 +918,6 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal .lr {
-    z-index: 1051;
     width: 1px;
     height: 75px;
     margin-left: 35px;
@@ -881,7 +928,6 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
     width: 1px;
     height: 75px;
     background-color: #2c3e50;
@@ -902,3 +948,75 @@ footer .footer-below {
        margin-top: -580px;
     }
 }
+
+
+
+
+
+/* CSS HoverOvers from thecodeplayer.com */
+
+
+
+/*Thumbnail Background*/
+.thumb {
+    width: 400px; height: 300px; margin: 70px auto;
+    perspective: 1000px;
+}
+.thumb a {
+    display: block; width: 100%; height: 100%;
+    /*double layered BG for lighting effect*/
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url("http://thecodeplayer.com/u/m/i1.png");
+    /*disabling the translucent black bg on the main image*/
+    background-size: 0, cover;
+    /*3d space for children*/
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+    /*36px high element positioned at the bottom of the image*/
+    content: ''; position: absolute; left: 0; bottom: 0; 
+    width: 100%; height: 36px;
+    /*inherit the main BG*/
+    background: inherit; background-size: cover, cover;
+    /*draw the BG bottom up*/
+    background-position: bottom;
+    /*rotate the surface 90deg on the bottom axis*/
+    transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+    color: white; text-transform: uppercase;
+    position: absolute; top: 100%; left: 0; width: 100%;
+    font: bold 12px/36px Montserrat; text-align: center;
+    /*the rotation is a bit less than the bottom surface to avoid flickering*/
+    transform: rotateX(-89.99deg); transform-origin: top;
+    z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s; 
+    /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+.thumb:hover a:before {
+    opacity: 1;
+    /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+

@@ -62,7 +62,6 @@ $("#transform").on("click", function (){
 });
 
 $("#af-logo").on("click", function (){
-
     $('#mhead').hide();
     $('#lion').show();
     $('header').css({ background: '#000' });
@@ -83,4 +82,28 @@ $(".contact-button-span").on("click", function () {
       $(".circle").hide();
 });
 
+$("#transform").on("click", function () {
+     $('#transform').addClass('tinUp');
+});
 
+
+/*
+// This allows the window to know when we reached a certain point
+$(window).scroll(function() {
+    if ($(window).scrollTop()  > $(window).height() / 2)
+    {
+        alert('You are in the middle of the page');
+    }
+});
+
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+} */
