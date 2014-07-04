@@ -66,8 +66,16 @@ $("#af-logo").on("click", function (){
     $('#lion').show();
     $('header').css({ background: '#000' });
 
+
+
 });
 
+ $(".head-circle").on("click", function () {
+    $(".head-circle").removeClass("vanish");
+    $(".head-circle").addClass("fade-out");
+     $('header').css({ background: '#000' });
+
+});
 
 // The see more button clicked makes contact appear
 $(".see-more-span").on("click", function () {
@@ -107,3 +115,16 @@ function isScrolledIntoView(elem)
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 } */
+
+
+
+$('.spritehead').sprite({fps: 29, no_of_frames: 3}).active().spRandom({
+          top: 70,
+          left: 100,
+          right: -200,
+          bottom: 340,
+          speed: 4000,
+          pause: 3000
+      });
+
+$('.spritehead').pan({fps: 30, speed: 2, dir: 'right'});

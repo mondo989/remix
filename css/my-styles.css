@@ -94,6 +94,18 @@ hr.mail-primary:after {
             border-radius: 120px;
 }
 
+.blue {
+
+    padding: 30px;
+
+      -webkit-animation: fadeInDownBig 3.9s  linear;
+       -moz-animation: fadeInDownBig 3.9s  linear;
+        -ms-animation: fadeInDownBig 3.9s  linear;
+         -o-animation: fadeInDownBig 3.9s  linear;
+            animation: fadeInDownBig 3.9s  linear;
+  
+
+}
 
 
 hr.mail-primary:after {
@@ -183,6 +195,16 @@ header .intro-text .skills {
     text-shadow: 1px 2px 0px white;
 }
 
+.intro-text {
+     -webkit-animation: puffIn 1.39s  linear;
+       -moz-animation: puffIn 1.39s  linear;
+        -ms-animation: puffIn 1.39s  linear;
+         -o-animation: puffIn 1.39s  linear;
+            animation: puffIn 1.39s  linear;
+
+}
+
+
 @media(min-width:768px) {
     header .container {
         padding: 200px 0 100px;
@@ -259,7 +281,7 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
     background: black;
-    box-shadow: 1px 3px 15px 6px rgba(0,0,0,0.75);
+    border-bottom: 2px gray double;
 
     
 }
@@ -313,8 +335,7 @@ section {
 #lion {
     display: none;
     opacity: .71;
-
-z-index: -1;
+    z-index: -1;
 
 
     -webkit-animation: vanishIn 2s  ease;
@@ -328,28 +349,55 @@ z-index: -1;
     -ms-transition: 2s;
      -o-transition: 2s;
         transition: 2s;
+}
+
+img#mhead {
+    padding-left: 10px;
 }
 
 #mhead {
     z-index: 2;
     opacity: 1;
-    
-  -webkit-animation: vanishIn 2s  ease;
-       -moz-animation: vanishIn 2s  ease;
-        -ms-animation: vanishIn 2s  ease;
-         -o-animation: vanishIn 2s  ease;
-            animation: vanishIn 2s  ease;
-
--webkit-transition: 2s;
-   -moz-transition: 2s;
-    -ms-transition: 2s;
-     -o-transition: 2s;
-        transition: 2s;
-
-
 }
 
-#mhead:hover {
+.spritehead {
+    display: block;
+       background: url('../img/mesprite.png') no-repeat;
+       height: 220px;
+       width: 100%;
+      
+}
+
+.spritehead:hover {
+    background-position: -190px 0;
+}
+
+
+.head-circle {   
+    height: auto;
+webkit-box-shadow: 0 0  12px rgba(0,0,0,0.5437) inset, 0px 0px 0px 7px rgba(61,64,85,0.3);
+-moz-box-shadow: 0 0 12px rgba(0,0,0,0.5437) inset, 0px 0px 0px 7px rgba(61,64,85,0.3);
+box-shadow: 0 0 12px rgba(0,0,0,0.5437) inset, 0px 0px 0px 7px rgba(61,64,85,0.3);
+background-size: cover;
+background-color: #f0f0f0;
+background-repeat: no-repeat;
+background-position: center center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+width: 200px;
+
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%, rgba(178,178,178,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(178,178,178,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b2b2b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+
+.vanish {
     -webkit-animation: vanishIn 2s  ease;
        -moz-animation: vanishIn 2s  ease;
         -ms-animation: vanishIn 2s  ease;
@@ -362,6 +410,41 @@ z-index: -1;
      -o-transition: 2s;
         transition: 2s;
 }
+
+.fade-out {
+    opacity: .71;
+    z-index: -1;
+
+  height: auto;
+webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.7) inset, 0px 0px 0px 12px rgba(61,64,85,0.3);
+-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.7) inset, 0px 0px 0px 12px rgba(61,64,85,0.3);
+box-shadow: 0px 2px 5px rgba(0,0,0,0.7) inset, 0px 0px 0px 12px rgba(61,64,85,0.3);
+background-size: cover;
+background-color: #f0f0f0;
+background-repeat: no-repeat;
+background-position: center center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+width: 200px;
+
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%, rgba(178,178,178,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(178,178,178,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,.1) 0%,rgba(178,178,178,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b2b2b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-animation: holeOut 2s  ease;
+       -moz-animation: holeOut 2s  ease;
+        -ms-animation: holeOut 2s  ease;
+         -o-animation: holeOut 2s  ease;
+            animation: holeOut 2s  ease;
+
+
+}
+
 
 
 .fa-plus-circle:before{
@@ -544,20 +627,28 @@ background: white;
     background: white;
 }
 
+.mhead-animation {
+    -webkit-animation: holeOut 1.7s  ease;
+       -moz-animation: holeOut 1.7s  ease;
+        -ms-animation: holeOut 1.7s  ease;
+         -o-animation: holeOut 1.7s  ease;
+            animation: holeOut 1.7s  ease;
 
-/* #mhead {
-    background: transparent;
-    border-radius: 180px;
-    height: 20%;
-    width: 25%;
-    border: 1px solid black;
+-webkit-transition: .7s;
+   -moz-transition: .7s;
+    -ms-transition: .7s;
+     -o-transition: .7s;
+        transition: .7s;
+
 }
 
+
 #mhead:hover {
-    background: red;
+    background: black;
+ 
     }
 
-     */
+
 
    .tinUp {
        -webkit-animation: tinUpOut .7s  ease;
