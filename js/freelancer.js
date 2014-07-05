@@ -57,7 +57,7 @@ $('body').scrollspy({
 $("#transform").on("click", function (){
 
     $('#mhead').hide();
-    $('#lion').show("slow");
+    $('.head-circle').show();
     $('header').css({ background: '#000'});
 });
 
@@ -74,7 +74,6 @@ $("#af-logo").on("click", function (){
     $(".head-circle").removeClass("vanish");
     $(".head-circle").addClass("fade-out");
      $('header').css({ background: '#000' });
-
 });
 
 // The see more button clicked makes contact appear
