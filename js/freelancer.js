@@ -63,7 +63,7 @@ $("#transform").on("click", function (){
 
 $("#af-logo").on("click", function (){
     $('#mhead').hide();
-    $('#lion').show();
+    $('.head-circle').show();
     $('header').css({ background: '#000' });
 
 
