@@ -193,6 +193,7 @@ header .intro-text .name {
     font-family: 'Lato', sans-serif;
     font-size: 2em;
     font-weight: 100;
+    
     text-shadow: 1px 1px 0.3px #000;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
