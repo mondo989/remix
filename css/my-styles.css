@@ -141,11 +141,11 @@ hr.star-primary:after {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     opacity: .8;
-     -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;   
+     -webkit-transition: .51s;
+    -moz-transition: .51s;
+    -ms-transition: .51s;
+    -o-transition: .51s;
+    transition: .51s;   
 }
 
 .img-style:hover{   
@@ -153,24 +153,17 @@ hr.star-primary:after {
     -webkit-box-shadow: 0 1.3px 1.3px 1px rgba(0,0,0,0.5);
     box-shadow: 0 1.3px 1.3px 1px rgba(0,0,0,0.5);
     opacity: 1;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;   
+    -webkit-transition: .51s;
+    -moz-transition: .51s;
+    -ms-transition: .51s;
+    -o-transition: .51s;
+    transition: .51s;   
 }
 
 header {
     text-align: center;
     color: #fff;
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(178,178,178,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(178,178,178,1))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(178,178,178,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(178,178,178,1) 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(178,178,178,1) 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(178,178,178,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b2b2b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   background-color: white;
     z-index: -2;
     box-shadow: 1px .51px 5px 2px rgba(0, 0, 0, 0.176);
     -webkit-transition: 2s;
@@ -209,7 +202,8 @@ header .intro-text .skills {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     text-transform: uppercase;
-    text-shadow: 1px 2px 0px white;
+    text-shadow: 1px 1px 0.3px #000;
+    color: white;
 }
 
 .intro-text {
@@ -331,6 +325,26 @@ section {
              animation: flipInY 5s ease; */
 }
 
+.temp {
+    width: 100%;
+    background: url('../img/sky.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+  
+   /* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),  url('../img/sky.png') no-repeat, url('../img/sky.png') no-repeat;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%),  url('../img/sky.png') no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.5))), url('../img/sky.png')  no-repeat;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('../img/sky.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('../img/sky.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('../img/sky.png') no-repeat;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('../img/sky.png') no-repeat;   */ 
+    
+    background-size: cover;
+    background-position: center 250px;
+
+}
+
+
 .separator {
     height: 1px;
     width: 80%;
@@ -343,7 +357,9 @@ section {
     opacity: .9;
     background: rgba(232,232,232,0.46);
     border-radius: 50%;
+    box-shadow: 1px 1px 0.3px #000;
 }
+
 
 .custom-hr {
      box-shadow: .01px .01px 3px white;
@@ -442,7 +458,9 @@ img#mhead {
   animation: holeOut 2s  ease;
 }
 
-
+.fa-code {
+    font-size: 1.12em;
+}
 
 .fa-plus-circle:before{
     z-index: 900;
@@ -578,6 +596,24 @@ section.success {
 .fa-envelope {
     font-size: 1.3em;
     margin: 0 5px;
+}
+
+.trystyle {
+    font-size:1.2em;
+    -webkit-transition: .51s;
+    -moz-transition: .51s;
+    -ms-transition: .51s;
+    -o-transition: .51s;
+    transition: .51s;
+}
+
+.trystyle:hover {
+    color: white;
+    -webkit-transition: .51s;
+    -moz-transition: .51s;
+    -ms-transition: .51s;
+    -o-transition: .51s;
+    transition: .51s;
 }
 
 
@@ -1181,10 +1217,12 @@ footer .footer-below {
 .md-content button {
     display: block;
     margin: 0 auto;
-    font-size: 0.8em;
-    padding: 20px;
+    font-size: 1.38em;
+    padding: 15px 25px;
     color: white;
     background: black;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
 }
 
 /* Effect 5: fall */
