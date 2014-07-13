@@ -55,7 +55,6 @@ hr.star-primary {
     background: black;
     border-radius: 50%;
     height: 1px;
-    box-shadow: .01px .01px .3px white;
 }
 
 hr.star-light:after,
@@ -75,7 +74,7 @@ hr.mail-primary {
     max-width: 80%;
     border-top: solid 1px;
     text-align: center;
-    opacity: .8;
+    opacity: 1;
     border-radius: 50%;
 }
 
@@ -120,13 +119,14 @@ hr.star-primary:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     border-radius: 120px;
-    opacity: .9;
+    opacity: 1;
     box-shadow: .01px .01px .3px white;
 
 }
 
 .img-centered {
     margin: 0 auto;
+    height: 300px;
 }
 
 .img-style {
@@ -156,14 +156,13 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-   background-color: white;
+    background-color: white;
     z-index: -2;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s;
-
+    -webkit-transition: 2.3s;
+    -moz-transition: 2.3s;
+    -ms-transition: 2.3s;
+    -o-transition: 2.3s;
+    transition: 2.3s;
 }
 
 header .container {
@@ -426,12 +425,12 @@ img#mhead {
 }
 
 .head-circle:hover {   
-
   -webkit-transform: scale(1.0912);
      -moz-transform: scale(1.0912);
       -ms-transform: scale(1.0912);
        -o-transform: scale(1.0912);
           transform: scale(1.0912);
+
 }
 
 
@@ -681,6 +680,7 @@ background: white;
     -ms-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+    opacity: .01920;
 }
 
    .tinUp {
@@ -777,7 +777,7 @@ background: white;
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: gray;
+    color: black;
     background: #fff;
 
 }
@@ -1143,7 +1143,7 @@ footer .footer-below {
     top: 50%;
     left: 50%;
     width: 70%;
-    max-width: 830px;
+    max-width: 800px;
     min-width: 370px;
     height: 90%;
     z-index: 2000;
@@ -1156,7 +1156,7 @@ footer .footer-below {
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     overflow-y: scroll;
-    margin-top: 10px;
+    margin-top: 75px;
 }
 
 .md-show {
@@ -1203,6 +1203,8 @@ footer .footer-below {
     opacity: 0.8;
     background: rgba(0,0,0,0.1);
     border-radius: 3px 3px 0 0;
+    color: white;
+    
 }
 
 .md-content > div {
@@ -1230,7 +1232,7 @@ footer .footer-below {
     display: block;
     margin: 0 auto;
     font-size: 1.38em;
-    padding: 15px 25px;
+    padding: 10px 20px;
     color: white;
     background: black;
     -webkit-border-radius: 6px;
@@ -1256,21 +1258,14 @@ footer .footer-below {
 }
 
 .md-show.md-effect-5 .md-content {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    transition: all .8s ease-in;
     -webkit-transform: translateZ(0px) rotateX(0deg);
     -moz-transform: translateZ(0px) rotateX(0deg);
     -ms-transform: translateZ(0px) rotateX(0deg);
     transform: translateZ(0px) rotateX(0deg); 
-    background: rgb(125,126,125); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: black;
     opacity: 1;
     padding: 25px;
 }

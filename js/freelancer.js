@@ -54,12 +54,6 @@ $('body').scrollspy({
 
 
 
-$(".fa-plus-circle").hover(function () {
-    $(".demo-row-2").show();
-    $(".contact-button-span").show("slow");
-    $('.see-more-span').hide ("fast") ;
-                           });
-
 
 //Scrolll button on bottom makes animation appear
 $("#transform").on("click", function (){
@@ -88,7 +82,6 @@ $("#af-logo").on("click", function (){
 
  $(".head-circle").on("click", function () {
     $(".head-circle").removeClass("vanish");
-    $(".head-circle").addClass("fade-out");
      $('header').css({ background: '#000' });
      $('.name').css({color:'white'});
      $('.skills').css({color:'white'});
