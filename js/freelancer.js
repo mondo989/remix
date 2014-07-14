@@ -128,8 +128,8 @@ function isScrolledIntoView(elem)
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 } */
 
-
-
+/*
+This is going to be for the sprite with main image.
 $('.spritehead').sprite({fps: 29, no_of_frames: 3}).active().spRandom({
           top: 70,
           left: 100,
@@ -140,3 +140,5 @@ $('.spritehead').sprite({fps: 29, no_of_frames: 3}).active().spRandom({
       });
 
 $('.spritehead').pan({fps: 30, speed: 2, dir: 'right'});
+
+*/

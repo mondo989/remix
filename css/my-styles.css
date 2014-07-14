@@ -87,7 +87,7 @@ hr.mail-primary:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2.2em;
-    
+    background: white;
 }
 
 
@@ -95,7 +95,7 @@ hr.mail-primary:after {
     color: black;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 0 1px 1px .21px rgba(0,0,0,0.45);
+    box-shadow: 0 1px .1px black;
     padding: 0 .25em;
     width: 49px;
     height: 49px;
@@ -120,7 +120,7 @@ hr.star-primary:after {
     filter: alpha(opacity=100);
     border-radius: 120px;
     opacity: 1;
-    box-shadow: .01px .01px .3px white;
+    box-shadow: 0 1px .1px black;
 
 }
 
@@ -773,6 +773,14 @@ background: white;
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
+}
+
+.btn-center {
+    background: red;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
 }
 
 .btn-outline:hover,
