@@ -262,10 +262,13 @@ header .intro-text .skills {
     z-index: 9000;
     text-transform: uppercase;
     font-family:  'Lato', sans-serif;
-
 }
 
+.nav>li {
+    color: green;
+    font-weight: 800;
 
+}
 
 .navbar a:focus {
     outline: 0;
