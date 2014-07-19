@@ -337,7 +337,15 @@ section {
 
 }
 
-
+.modal-frame {
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    
+}
 
 .separator {
     height: 1px;
