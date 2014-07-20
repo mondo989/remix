@@ -132,7 +132,7 @@ hr.star-primary:after {
 .img-style {
     border: 1px solid rgba(0,0,0,0.25);
     -webkit-border-radius: 6px;
-    border-radius: 6px;
+    border-radius: 15px;
     opacity: .8;
      -webkit-transition: .51s;
     -moz-transition: .51s;
@@ -742,7 +742,7 @@ background: white;
 }
 
 .white-background {
-    background: white;
+    font-size:22px;
 }
 
 .foolish {
@@ -922,6 +922,15 @@ background: white;
 
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
+}
+
+.form-group {
+    margin-top: 12px;
+    border-right: .031px gray solid;
+    border-left: .031px gray solid;
+    border-bottom: .31px gray solid;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
 }
 
 footer {
@@ -1114,13 +1123,14 @@ footer .footer-below {
     content: ''; position: absolute; top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.5); 
-    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.15);
     transition: all 0.5s; 
     /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
-    opacity: 0.15;
+    opacity: 0.5;
     transform: rotateX(95deg) translateZ(-80px) scale(0.75);
     transform-origin: bottom;
 }
+
 .thumb:hover a:before {
     opacity: 1;
     /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
@@ -1146,13 +1156,13 @@ footer .footer-below {
 
 .md-modal {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    width: 70%;
+    width: 90%;
     max-width: 800px;
     min-width: 370px;
-    height: 60%;
-    z-index: 2000;
+    height: 90%;
+    margin-top: 200px;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -1162,8 +1172,8 @@ footer .footer-below {
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     overflow-y: scroll;
-    margin-top: 75px;
-    background: white;
+    z-index: 200000;
+
 }
 
 .md-show {
@@ -1180,9 +1190,10 @@ footer .footer-below {
     z-index: 10;
     opacity: 0;
    background: white;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: 1.0s;
+    -moz-transition:  1.0s;
+    transition: 1.0s;
+
 }
 
 .md-show ~ .md-overlay {
@@ -1190,15 +1201,23 @@ footer .footer-below {
     visibility: visible;
 }
 
+.md-close {
+    z-index: 900000;
+    color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:125px;
+    }
+
 /* Content styles */
 .md-content {
-    color: #fff;
     background: black;
     position: relative;
-    border-radius: 3px;
     margin: 0 auto;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+
 }
 
 .md-content h3 {
@@ -1210,6 +1229,9 @@ footer .footer-below {
     opacity: 0.8;
     border-radius: 3px 3px 0 0;
     color: black;
+    padding-top: 40px;
+    margin-bottom: -10px;
+
 }
 
 .md-content > div {
@@ -1223,6 +1245,7 @@ footer .footer-below {
 .md-content > div p {
     margin: 0;
     padding: 10px 0;
+    
 }
 
 .md-content > div ul {
@@ -1238,11 +1261,14 @@ footer .footer-below {
     display: block;
     margin: 0 auto;
     font-size: 1.38em;
-    padding: 10px 20px;
+    padding: 17px 12px;
+
+    line-height: 2px;
     color: white;
     background: black;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 16px;
+    border-radius: 60px;
+    z-index: 200000;
 }
 
 /* Effect 5: fall */
@@ -1273,9 +1299,10 @@ footer .footer-below {
     -moz-transform: translateZ(0px) rotateX(0deg);
     -ms-transform: translateZ(0px) rotateX(0deg);
     transform: translateZ(0px) rotateX(0deg); 
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.021);
+    /* box-shadow: .2px .23px .31px black; */
     opacity: 1;
-    padding: 25px;
+
 }
 
 .p-modal {
@@ -1294,11 +1321,11 @@ footer .footer-below {
     width: 100%;
 
 
-      -webkit-transition: 8s;
-         -moz-transition: 8s;
-          -ms-transition: 8s;
-           -o-transition: 8s;
-              transition: 8s;
+        -webkit-transition: 8s;
+        -moz-transition: 8s;
+        -ms-transition: 8s;
+        -o-transition: 8s;
+        transition: 8s;
     }
 }
 
@@ -1309,5 +1336,17 @@ footer .footer-below {
     #mhead {
         width: 125px;
     }
+
+    .md-content > div p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 12px;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+    
+}
 }
 
