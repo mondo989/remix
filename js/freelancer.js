@@ -68,13 +68,12 @@ $("#transform").on("click", function (){
 });
 
 $("#af-logo").on("click", function (){
-    $('#mhead').hide();
-    $('.head-circle').show();
+    $('.head-circle').addClass('foolish');
     $('header').css({ background: '#000' });
-     $('.name').css({color:'white'});
-     $('.skills').css({color:'white'});
-     $('.separator').css({background:'white'});
-     $('.fa-code').css({color:'white'});
+    $('.name').css({color:'white'});
+    $('.skills').css({color:'white'});
+    $('.separator').css({background:'white'});
+    $('.fa-code').css({color:'white'});
 
 
 
@@ -102,8 +101,8 @@ $(".contact-button-span").on("click", function () {
       $(".circle").hide();
 });
 
-$("#transform").on("click", function () {
-     $('#transform').addClass('tinUp');
+$(".btn-action").on("click", function () {
+     $('.head-circle').addClass('tinUp');
 });
 
 
