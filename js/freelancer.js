@@ -106,6 +106,23 @@ $(".btn-action").on("click", function () {
 });
 
 
+// Randomizer using this from another place i've made it. 
+
+var randomNumGen = Math.floor((Math.random() * 10) + 1);
+
+    if ( randomNumGen <= 5) {
+
+     $('header').css({ background: '#000' });
+     $('.name').css({color:'white'});
+     $('.skills').css({color:'white'});
+     $('.separator').css({background:'white'});
+     $('.fa-code').css({color:'white'});
+
+    }
+
+
+
+
 /*
 // This allows the window to know when we reached a certain point
 $(window).scroll(function() {
