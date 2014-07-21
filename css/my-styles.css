@@ -1156,13 +1156,12 @@ footer .footer-below {
 
 .md-modal {
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    width: 90%;
     max-width: 800px;
     min-width: 370px;
-    height: 90%;
     margin-top: 200px;
+    padding: 10px;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -1307,6 +1306,7 @@ footer .footer-below {
     background: rgba(0,0,0,0.021);
     /* box-shadow: .2px .23px .31px black; */
     opacity: 1;
+    padding: 25px;
 
 }
 
