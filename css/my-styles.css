@@ -671,9 +671,9 @@ section.success {
 }
 
 .fa-plus-circle {
-    font-size: 5em;   
+    font-size: 3.1em;   
     position: absolute;
-    margin-top: -55px;
+    margin-top: -43px;
     left:0;
     right:0;
     top: 0;
@@ -1171,7 +1171,6 @@ footer .footer-below {
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    overflow-y: scroll;
     z-index: 200000;
 
 }
