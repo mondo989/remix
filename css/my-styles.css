@@ -1262,13 +1262,19 @@ footer .footer-below {
     margin: 0 auto;
     font-size: 1.38em;
     padding: 17px 12px;
-
+    position: absolute;
+    top: 0;
+    margin-left: 1px;
+    left: 0;
     line-height: 2px;
     color: white;
     background: black;
     -webkit-border-radius: 16px;
     border-radius: 60px;
     z-index: 200000;
+    height: 40px;
+    width: 40px;
+
 }
 
 /* Effect 5: fall */
