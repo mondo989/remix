@@ -5858,55 +5858,78 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -moz-transform-origin: 0 0;
     -moz-transform: translateY(-100%);
+      opacity: 0;
+  }
+   60% {
+    opacity: .20;
   }
 
   100% {
     -moz-transform-origin: 0 0;
     -moz-transform: translateY(0%);
+      opacity: 1;
   }
 }
 @-webkit-keyframes slideUpRetourn {
   0% {
     -webkit-transform-origin: 0 0;
     -webkit-transform: translateY(-100%);
+      opacity: 0;
+  }
+   60% {
+    opacity: .20;
   }
 
   100% {
     -webkit-transform-origin: 0 0;
     -webkit-transform: translateY(0%);
+      opacity: 1;
   }
 }
 @-o-keyframes slideUpRetourn {
   0% {
     -o-transform-origin: 0 0;
     -o-transform: translateY(-100%);
+      opacity: 0;
   }
-
+   60% {
+    opacity: .20;
+  }
   100% {
     -o-transform-origin: 0 0;
     -o-transform: translateY(0%);
+      opacity: 1;
   }
 }
+
 @-ms-keyframes slideUpRetourn {
   0% {
     -ms-transform-origin: 0 0;
     -ms-transform: translateY(-100%);
+    opacity: 0;
   }
-
+   60% {
+    opacity: .20;
+  }
   100% {
     -ms-transform-origin: 0 0;
     -ms-transform: translateY(0%);
+     opacity: 1;
   }
 }
 @keyframes slideUpRetourn {
   0% {
     transform-origin: 0 0;
     transform: translateY(-100%);
+    opacity: 0;
   }
-
+  60% {
+    opacity: .20;
+  }
   100% {
     transform-origin: 0 0;
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 @-moz-keyframes swap {

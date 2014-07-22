@@ -110,18 +110,29 @@ $(".btn-action").on("click", function () {
 
 var randomNumGen = Math.floor((Math.random() * 10) + 1);
 
-    if ( randomNumGen <= 5) {
+    if ( randomNumGen <= 4)  {
 
      $('header').css({ background: '#000' });
      $('.name').css({color:'white'});
      $('.skills').css({color:'white'});
      $('.separator').css({background:'white'});
      $('.fa-code').css({color:'white'});
-
     }
-
-
-
+    else if ( randomNumGen <= 8)  {
+     $('header').css({ background: 'white' });
+     $( ".head-circle" ).removeClass( "entrance" ).addClass( "entrancec" );
+     $('.name').css({color:'black'});
+     $('.skills').css({color:'black'});
+     $('.separator').css({background:'black'});
+     $('.fa-code').css({color:'black'});
+    }
+    else if ( randomNumGen <= 1)  {
+     $( ".head-circle" ).removeClass( "entrance" ).addClass( "entranceb" );
+     $('.name').css({color:'black'});
+     $('.skills').css({color:'black'});
+     $('.separator').css({background:'black'});
+     $('.fa-code').css({color:'black'});
+    }
 
 /*
 // This allows the window to know when we reached a certain point
