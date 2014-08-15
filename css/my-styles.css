@@ -182,13 +182,11 @@ header .intro-text .name {
     font-size: 2em;
     font-weight: 100;
     color: black;
-
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
     color: black;
-  
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -437,7 +435,15 @@ section {
     opacity: .36;
     background: black;
     border-radius: 50%;
+}
 
+
+.portfolio-seperator {
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 
@@ -588,8 +594,44 @@ img#mhead {
 
 .fa-fire:before{
     content: "\f1b2";
+}
+
+.fa-chevron-up {
+  color: black;
+}
+
+.see-more-span {
+  font-size: 17px;
+}
+
+.btm-right {
+  background: white;
+  z-index: 200000;
+  margin-left: -30px;
+  margin-top: -4px;
+  opacity: .2;
+}
+
+.btm-right:hover {
+  background: white;
+  z-index: 200000;
+  
+  -webkit-transition: .41s;
+  -moz-transition: .41s;
+  -ms-transition: .41s;
+  -o-transition: .41s;
+  transition: .41s;
+  opacity: 1;
+}
+
+
+.copyright-move {
+  margin-right: 50px;
+  
+
 
 }
+
 
 /* This is the aboutsection */
 
@@ -714,13 +756,15 @@ section.success {
     margin: 0 5px;
 }
 
-.trystyle {
+a.trystyle {
     font-size:1.2em;
     -webkit-transition: .51s;
     -moz-transition: .51s;
     -ms-transition: .51s;
     -o-transition: .51s;
     transition: .51s;
+
+  color: black;
 }
 
 .trystyle:hover {
@@ -795,7 +839,7 @@ background: white;
 }
 
 .circle {
-    background: transparent;
+    background: white;
     width: 120px;
     height: 120px;
     margin: auto;
@@ -805,7 +849,7 @@ background: white;
 }
   .circle:before {
     content: '';
-    background: transparent;
+    background: black;
     width: 0;
     height: 0;
     position: absolute;
@@ -948,14 +992,6 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
-.form-group {
-    margin-top: 12px;
-    border-right: .031px gray solid;
-    border-left: .031px gray solid;
-    border-bottom: .31px gray solid;
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-}
 
 footer {
     color: #fff;

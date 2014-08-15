@@ -1,8 +1,8 @@
 
-// Navbar Closes and NOT opens whenever you click off screen, Thx StOvFlow
+/* Navbar Closes and NOT opens whenever you click off screen, Thx StOvFlow
 $(document).on('click',function(){
 $('.navbar-collapse.in').collapse('hide');
-});
+}); */
 
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -21,12 +21,9 @@ $('.circle').on("click", function(){
     $(".demo-row-2").show();
 });
 
-
-
 $('#begin-contact').on("click", function (){
     $('#begin-contact').hide();
     $("#contact").show();
-    
 });
 
 // This allows for the nav to be clicked and enabling the div that's hidden.
@@ -47,17 +44,9 @@ $(function() {
     });
 });
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-});
-
-
-
 
 //Scrolll button on bottom makes animation appear
 $("#transform").on("click", function (){
-
     $('#mhead').hide();
     $('.head-circle').show();
     $('header').css({ background: '#000'});
@@ -74,9 +63,6 @@ $("#af-logo").on("click", function (){
     $('.skills').css({color:'white'});
     $('.separator').css({background:'white'});
     $('.fa-code').css({color:'white'});
-
-
-
 });
 
  $(".head-circle").on("click", function () {
@@ -110,8 +96,7 @@ $(".btn-action").on("click", function () {
 
 var randomNumGen = Math.floor((Math.random() * 10) + 1);
 
-    if ( randomNumGen <= 4)  {
-
+    if ( randomNumGen <= 2)  {
      $('header').css({ background: '#000' });
      $('.name').css({color:'white'});
      $('.skills').css({color:'white'});
@@ -133,6 +118,8 @@ var randomNumGen = Math.floor((Math.random() * 10) + 1);
      $('.separator').css({background:'black'});
      $('.fa-code').css({color:'black'});
     }
+
+
 
 /*
 // This allows the window to know when we reached a certain point
