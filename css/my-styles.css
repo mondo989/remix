@@ -1,10 +1,6 @@
 body {
     overflow-x: hidden;
-    -webkit-perspective: 400px;
-       -moz-perspective: 400px;
-            perspective: 400px;
-
-
+   
 }
 
 p {
@@ -480,24 +476,9 @@ img#mhead {
     z-index: 2;
     opacity: 1;
     width: 175px;   
-    
+   
+   
 }
-
-
-#mhead:hover {
-
-    -webkit-transform: rotateX(120deg);
-    -moz-transform: rotateX(120deg);
-    -ms-transform: rotateX(120deg);
-    -o-transform: rotateX(120deg);
-    transform: rotateX(120deg);
-    
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    }
 
 .spritehead {
    display: block;

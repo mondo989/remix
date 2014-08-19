@@ -317,7 +317,12 @@
                         <p>I'm self taught and owe a lot of it to <a href="http://www.teamtreehouse.com/armandoflores">Team Treehouse.</a></p><br></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                       <a id="begin-contact" href="#contact" class="btn btn-lg btn-outline move-bottom">
+                       <a id="begin-contact" href="#contact" class="btn btn-lg btn-outline move-bottom"
+
+                                data-1000="opacity: 0;"
+                                data-1300="opacity: 1; background: black;" 
+                            
+                       >
                              <i class="fa fa-envelope"></i> Contact Me
                        </a>
                 </div>
@@ -372,7 +377,10 @@
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
-                <div class="row">
+                <div class="row"  
+                    data-1100="transform: translateY(-100px); transition: 2s; opacity: .1; color: lightblue;"
+                    data-1220="transform: translateY(0); opacity: 1; color: white;"
+                >
                     <div class="footer-col col-md-4">
                         <h4>Current Location:</h4>                       
                             <p>San Francisco
@@ -438,6 +446,11 @@
     <script src="js/freelancer.js"></script>
     <script src="js/modalEffects.js"></script>
     <!-- <script src="js/jquery.spritely.js"></script> -->
+      <!-- Skrollr  -->
+     <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
 
 </body>
 
