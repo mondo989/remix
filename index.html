@@ -438,6 +438,11 @@
   ga('create', 'UA-49251923-1', 'armando.sx');
   ga('send', 'pageview');
 </script>
+    
+
+     
+
+
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -446,11 +451,26 @@
     <script src="js/freelancer.js"></script>
     <script src="js/modalEffects.js"></script>
     <!-- <script src="js/jquery.spritely.js"></script> -->
-      <!-- Skrollr  -->
+     
+
+<!-- Disabling Skrollr if screensize is less than 500px -->
+<script>
+if (screen && screen.width > 500) {
+  document.write('<script type="text/javascript" src="js/skrollr.min.js"><\/script>');
+}
+</script>
+
+ <script type="text/javascript">
+             var s = skrollr.init();
+</script> 
+
+
+     <!-- Skrollr 
      <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
-            var s = skrollr.init();
-        </script>
+             var s = skrollr.init();
+        </script> 
+     -->
 
 </body>
 

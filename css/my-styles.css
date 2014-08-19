@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    overflow: scroll;
    
 }
 
@@ -141,6 +141,8 @@ hr.star-primary:after {
     -o-transition: .51s;
     transition: .51s;   
 }
+
+
 
 .img-style:hover{   
     -moz-box-shadow: 0 1.3px 1.3px 1px rgba(0,0,0,0.5);
